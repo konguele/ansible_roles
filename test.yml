@@ -1,0 +1,11 @@
+---
+- hosts: all
+  remote_user: root
+
+  tasks:
+    - name: uninstall the Mcafee package for HEC servers
+    command: rpm 
+    name: Mcafee
+    state: absent
+    update_cache: yes
+
