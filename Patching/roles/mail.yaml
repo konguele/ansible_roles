@@ -1,0 +1,16 @@
+---
+- hosts: all
+  gather_facts: False
+  connection: local
+  tasks:
+    - shell: echo "hello"
+      register: result
+
+    - mail:
+        host: localhost
+        port: 25
+        to: juanjo.garcia@test.com
+        subject: Test
+        body: "test"
+      delegate_to: localhost
+      run_once: True

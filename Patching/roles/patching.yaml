@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+    - name: update all the packages
+      become: yes
+      register: result
+      yum:
+        name: "*"
+        state: latest
+        update_cache: yes

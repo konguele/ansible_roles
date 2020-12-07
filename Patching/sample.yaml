@@ -1,0 +1,17 @@
+---
+- hosts: all
+  gather_facts: false
+  ignore_errors: true
+  tasks:
+  - name: Invoke downtime role
+    import_role:
+      name: nagios_downtime
+  - name: Invoke snapshot role
+    import_role:
+      name: snapshot
+  - name: Invoke patching role
+    import_role:
+      name: patching
+  - name: Invoke reboot role
+    import_role:
+      name: reboot
