@@ -1,0 +1,5 @@
+- Crear el usuario Ansible automatizado en todos los servidores
+- Añadir las authorized_keys al usuario ansible
+- Actualizar los servidores
+
+Probamos antes siempre con ansible-playbook archivo.yml --syntax-check
