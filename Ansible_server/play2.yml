@@ -1,0 +1,15 @@
+---
+- hosts: db
+  vars_files:
+    - vars_play2.yml
+  tasks:
+    - name: Instalar {{ db_pkg }}
+      yum:
+        name: "{{ db_pkg }}"
+        state: latest
+    - name: iniciando {{ db_srv }}
+      service:
+        name: "{{ db_srv }}"
+        state: started
+        enabled: true
+...
