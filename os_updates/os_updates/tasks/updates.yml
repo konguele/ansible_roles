@@ -1,0 +1,26 @@
+---
+- name: Enable EPEL Repository on AlmaLinux
+  dnf:
+    name: epel-release
+    state: latest
+
+- name: Updating AlmaLinux packages
+  dnf:
+    name: '*'
+    state: latest
+    update_cache: yes
+  register: upgrade
+  tags: upgrade
+
+- name: Reboot server after install packages 
+  reboot:
+
+#- name: Check if a reboot is required
+#  become: yes
+#  command: needs-restarting -r
+#  register: reg_reboot_required
+#  ignore_errors: yes
+#  failed_when: false
+#  changed_when: reg_reboot_required.rc != 0
+#  notify:
+#    - reboot server

@@ -1,0 +1,6 @@
+---
+- hosts: no_ansible
+  become: true
+  roles:
+    - os_updates
+...

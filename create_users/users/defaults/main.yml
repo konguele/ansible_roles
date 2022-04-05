@@ -1,0 +1,29 @@
+---
+# lista de usuarios a añadir
+users: []
+# crear los usuarios
+users_user_create: yes
+# ficheros del home por defecto
+users_home_files: []
+# home de los usuarios
+users_home: /home
+# crear el directorio home de los usuarios
+users_home_create: yes
+# grupo primario por defecto
+users_group:
+# grupo secundario por defecto
+users_groups: []
+# permisos del home directorio por defecto
+users_home_mode: "0755"
+# login shell por defecto
+#users_shell:
+# ssh key por defecto
+users_ssh_key_type: rsa
+# bits por defecto de la ssh key
+users_ssh_key_bits: 2048
+# ssh key exclusivo por defecto
+users_authorized_keys_exclusive: no
+# lista de usuarios a eliminar
+users_remove: []
+
+# defaults file for users

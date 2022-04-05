@@ -1,0 +1,12 @@
+---
+- hosts: db
+  become: true
+
+  roles:
+    - users
+  vars:
+    users:
+      - username: prueba2
+        home_create: yes
+    users_group: "grupo_prueba2"
+...
