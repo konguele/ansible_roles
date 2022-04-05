@@ -6,7 +6,8 @@
     - users
   vars:
     users:
-      - username: prueba2
+      - username: prueba3
         home_create: yes
+        password: "Pikachu1"
     users_group: "grupo_prueba2"
 ...
