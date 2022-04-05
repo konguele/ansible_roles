@@ -1,6 +1,0 @@
----
-# Install supervisor
-
-- name: Make sure supervisor is installed
-  package: name=supervisor state=installed
-  tags: supervisor

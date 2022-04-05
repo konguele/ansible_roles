@@ -1,5 +1,0 @@
----
-- hosts: all
-- name: url lookup splits lines by default
-  debug: msg="{{item}}"
-  loop: "{{ lookup('url', 'https://news.ycombinator.com/news', wantlist=True) }}"

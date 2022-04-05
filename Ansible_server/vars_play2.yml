@@ -1,4 +1,0 @@
----
-db_pkg: mariadb-server
-db_srv: mariadb
-...
