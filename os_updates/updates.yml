@@ -1,5 +1,5 @@
 ---
-- hosts: no_ansible
+- hosts: poner_hosts
   become: true
   roles:
     - os_updates

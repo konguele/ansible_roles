@@ -1,5 +1,5 @@
 ---
-- hosts: appweb
+- hosts: poner_hosts
   become: true
   tasks:
     - name: Reboot server 
